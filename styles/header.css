@@ -1,0 +1,92 @@
+/* HEADER DE NAVEGAÇÃO */
+header.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: var(--color-lightdark);
+    border: 1.7px solid var(--border-color);
+    border-radius: 12px;
+    height: 64px;
+    max-width: 560px;
+    min-width: 320px;
+    margin: 15px auto 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+nav.left-section,
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.right-section .hire-me {
+    margin-top: 1.5px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links button,
+.dark-mode {
+    border: none;
+    background: transparent;
+    border-radius: 22px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.3;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.links button:hover,
+.dark-mode:hover {
+    background-color: #333;
+    opacity: 0.6;
+}
+
+.links img,
+.right-section img {
+    width: 28px;
+    height: 28px;
+}
+
+.hire-me img {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+/* TOOLTIP */
+.links .tooltip,
+.dark-mode .tooltip {
+    position: absolute;
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    padding: 4px 8px;
+    font-size: 13px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+    bottom: 0;
+    transition: 0.2s;
+}
+
+.links button:hover .tooltip,
+.dark-mode:hover .tooltip {
+    opacity: 1;
+    transform: translateY(-155%);
+}
+
+.right-section .dark-mode .tooltip {
+    margin-left: -27px;
+}

@@ -1,0 +1,15 @@
+:root {
+    --color-dark: rgb(22, 22, 22);
+    --color-lightdark: rgb(33, 33, 33);
+    --border-color: rgb(44, 44, 44);
+    --text-color: rgb(255, 255, 255);
+}
+
+/* RESET GLOBAL */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Inter", sans-serif;
+}
