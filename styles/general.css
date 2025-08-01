@@ -1,9 +1,20 @@
+/* :root contém as variáveis de cor para o tema escuro (padrão) */
 :root {
     --color-dark: rgb(22, 22, 22);
     --color-lightdark: rgb(33, 33, 33);
+    --color-gray: #2c2c2c;
+    --color-gray-light: #373737;
+    --color-gray-medium: #616161;
     --border-color: rgb(44, 44, 44);
-    --text-color: rgb(255, 255, 255);
+    --text-color-primary: #fafafa;
+    --text-color-secondary: #bcbcbc;
+    --accent-color: #289162;
+    --accent-color-darker: #1d704d;
+    --accent-color-hover: #28c780;
+    --font-family-main: "Inter", sans-serif;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* RESET GLOBAL */
 * {
@@ -11,5 +22,99 @@
     padding: 0;
     margin: 0;
     -webkit-font-smoothing: antialiased;
-    font-family: "Inter", sans-serif;
+    font-family: var(--font-family-main);
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-dark) var(--color-lightdark);
+}
+
+body {
+    background-color: var(--color-dark);
+    color: var(--text-color-secondary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CLASSE CONTAINER PRINCIPAL (REUTILIZÁVEL) */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--color-lightdark);
+    border: 1.6px solid var(--border-color);
+    border-radius: 16px;
+    max-width: 590px;
+    overflow: hidden;
+    width: 100%;
+    padding: 32px 16px 16px;
+    gap: 24px;
+    margin: 100px auto 0;
+}
+
+/* CLASSE DE TÍTULO DE SEÇÃO (REUTILIZÁVEL) */
+.section-title {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--text-color-primary);
+}
+
+.section-title .circle {
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    background-color: var(--color-gray-medium);
+}
+
+/* COMPONENTE DE RODAPÉ (REUTILIZÁVEL) */
+.footer-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-gray);
+    width: 100%;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.social-media {
+    display: flex;
+    gap: 16px;
+}
+
+.social-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c3c3c;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease-out;
+    opacity: 0.6;
+}
+
+.social-circle:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.social-circle img {
+    width: 24px;
+    height: 24px;
 }

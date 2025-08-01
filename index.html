@@ -6,12 +6,9 @@
         <link rel="stylesheet" href="styles/header.css" />
         <link rel="stylesheet" href="styles/general.css" />
         <link rel="stylesheet" href="styles/body.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
+
+        <script src="js/script.js" defer></script>
+
         <title>GuilhermeDevv</title>
     </head>
     <body>
@@ -19,129 +16,192 @@
         <header class="nav-header">
             <nav class="left-section">
                 <div class="links">
-                    <button>
-                        <img src="icons/home.svg" alt="Home" />
-                        <div class="tooltip">Home</div>
-                    </button>
-                    <button>
-                        <img src="icons/profile.svg" alt="About Me" />
-                        <div class="tooltip">Profile</div>
-                    </button>
-                    <button>
-                        <img src="icons/code.svg" alt="Projects" />
-                        <div class="tooltip">Projects</div>
-                    </button>
+                    <a href="index.html">
+                        <button>
+                            <img src="icons/home.svg" alt="Home" />
+                            <div class="tooltip">Home</div>
+                        </button>
+                    </a>
+
+                    <a href="#profile">
+                        <button>
+                            <img src="icons/profile.svg" alt="About Me" />
+                            <div class="tooltip">Profile</div>
+                        </button>
+                    </a>
+
+                    <a href="#projects">
+                        <button>
+                            <img src="icons/code.svg" alt="Projects" />
+                            <div class="tooltip">Projects</div>
+                        </button>
+                    </a>
                 </div>
             </nav>
+
             <div class="right-section">
-                <button class="dark-mode">
-                    <img src="icons/sun.svg" alt="Light Mode" />
-                    <div class="tooltip">Light Mode</div>
-                </button>
-                <button class="hire-me">
+                <a href="hire.html" class="hire-me">
                     <img
                         src="icons/plus-circle-svgrepo-com.svg"
                         alt="Hire Me"
                     />
                     <p>Hire Me</p>
-                </button>
+                </a>
             </div>
         </header>
 
         <!-- Conteúdo Principal -->
-        <main class="container">
-            <!-- Título e disponibilidade -->
-            <section class="form">
+        <main class="main-container">
+            <section class="section-title">
                 <div class="title">
                     <div class="circle"></div>
                     <h4>Computer Engineer</h4>
                 </div>
-                <div class="avaliable">
-                    <a href="#">
-                        <div class="circle"></div>
+                <a href="hire.html" class="avaliable">
+                    <div class="circle"></div>
+                    <div class="text-mobile-hidden">
                         <p>AVALIABLE FOR WORK</p>
-                    </a>
+                    </div>
+                </a>
+            </section>
+
+            <section class="profile-section" id="profile">
+                <div class="about">
+                    <h1>I'm <span>Guilherme Augusto</span></h1>
+                    <p>
+                        Computer Engineering student passionate about tech and
+                        innovation. I turn ideas into smart, efficient
+                        solutions.
+                    </p>
+                </div>
+
+                <div class="picture">
+                    <img src="icons/profilepic.jpg" alt="Foto de perfil" />
                 </div>
             </section>
 
-            <!-- Sobre -->
-            <div class="profile-section">
-                <section class="sobre">
-                    <h1>I'm Guilherme Augusto</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit.
-                    </p>
-                </section>
-
-                <section class="picture">
-                    <img src="icons/profilepic.jpg" alt="Foto de perfil" />
-                </section>
-            </div>
-
-            <!-- Botões de contato -->
             <section class="contato">
-                <button class="hire-me">
+                <a href="hire.html" class="hire-me">
                     <img
                         src="icons/plus-circle-svgrepo-com.svg"
                         alt="Hire Me"
                     />
                     <p>Hire Me</p>
-                </button>
-                <button class="email">
+                </a>
+                <button class="email" id="email" onclick="copyEmail()">
                     <img src="icons/cv.svg" alt="Copy Email" />
                     <p>Copy Email</p>
                 </button>
-                <button class="download">
-                    <a href="https://drive.google.com/file/d/1P01mINKpyFNpK-KpM37QZzGStp5drvzo/view?usp=drive_link">
-                    <img src="icons/download.svg" alt="Download CV">
-                    <p>Download CV</p>
-                    </a>
-                </button>
             </section>
 
-            <!-- Conteudo Principal --->
-            <section class="tech">
-                <div class="tools-title">
+            <section class="tools-section">
+                <div class="section-title">
                     <div class="circle"></div>
                     <h4>Tools I Use</h4>
                 </div>
 
-                <div class="tools">
-                    <div class="tool">
+                <div class="tools-grid">
+                    <div class="tool-card">
                         <img src="icons/html-5.svg" alt="HTML" />
                         <p>HTML</p>
                     </div>
-                    <div class="tool">
+                    <div class="tool-card">
                         <img src="icons/css-3.svg" alt="CSS" />
                         <p>CSS</p>
                     </div>
-                    <div class="tool">
+                    <div class="tool-card">
                         <img src="icons/js.svg" alt="JavaScript" />
-                        <p>JAVASCRIPT</p>
+                        <p>JS</p>
                     </div>
-                    <div class="tool">
+                    <div class="tool-card">
                         <img src="icons/react.svg" alt="React" />
                         <p>REACT</p>
                     </div>
-                    <div class="tool">
-                        <img src="icons/sql.svg" alt="SQL">
+                    <div class="tool-card">
+                        <img src="icons/sql.svg" alt="SQL" />
                         <p>SQL</p>
                     </div>
-                    <div class="tool">
-                        <img src="icons/git.svg" alt="Git">
+                    <div class="tool-card">
+                        <img src="icons/git.svg" alt="Git" />
                         <p>GIT</p>
                     </div>
-                    <div class="tool">
-                        <img src="icons/github.svg" alt="GITHUB">
+                    <div class="tool-card">
+                        <img src="icons/github.svg" alt="GITHUB" />
                         <p>GITHUB</p>
                     </div>
-                    <div class="tool">
-                        <img src="icons/postman.svg" alt="POSTMAN">
+                    <div class="tool-card">
+                        <img src="icons/postman.svg" alt="POSTMAN" />
                         <p>POSTMAN</p>
                     </div>
+                </div>
             </section>
-            <!-- Projetos -->
+            <section class="projects" id="projects">
+                <div class="projects-title section-title">
+                    <div class="circle-title circle"></div>
+                    <h4>Projects</h4>
+                </div>
+                <div class="projects-card">
+                    <a href="projects.html" class="card linktree">
+                        <div class="overlay"></div>
+                        <div class="circle">
+                            <img
+                                src="icons/linktree-svgrepo-com.svg"
+                                alt="Linktree"
+                            />
+                        </div>
+                        <h4>My Linktree</h4>
+                    </a>
+
+                    <a href="projects.html" class="card youtube">
+                        <div class="overlay"></div>
+                        <div class="circle">
+                            <img
+                                src="icons/youtube-svgrepo-com.svg"
+                                alt="YouTube Clone"
+                            />
+                        </div>
+                        <h4>YouTube Clone</h4>
+                    </a>
+
+                    <a href="projects.html" class="card api">
+                        <div class="overlay"></div>
+                        <div class="circle">
+                            <img
+                                src="icons/api-interface-svgrepo-com.svg"
+                                alt="API"
+                            />
+                        </div>
+                        <h4>E-commerce API</h4>
+                    </a>
+                </div>
+            </section>
+
+            <section class="footer-section">
+                <div class="section-title">
+                    <div class="circle"></div>
+                    <h4>Let's Connect</h4>
+                </div>
+
+                <div class="social-media">
+                    <div class="social-circle">
+                        <a
+                            href="https://linkedin.com/in/guilherme-augusto-devv"
+                        >
+                            <img src="icons/linkedin.svg" alt="LinkedIn" />
+                        </a>
+                    </div>
+                    <div class="social-circle">
+                        <a href="https://github.com/guilherme-augusto0611">
+                            <img src="icons/github.svg" alt="GitHub" />
+                        </a>
+                    </div>
+                    <div class="social-circle">
+                        <a href="https://www.instagram.com/guilherme.aab/">
+                            <img src="icons/instagram.svg" alt="Instagram" />
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>

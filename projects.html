@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/general.css" />
+        <link rel="stylesheet" href="styles/body.css" />
+        <link rel="stylesheet" href="styles/projects.css" />
+
+        <script src="js/script.js" defer></script>
+        <title>My Projects</title>
+    </head>
+
+    <body>
+        <!-- Header de Navegação -->
+        <header class="nav-header">
+            <nav class="left-section">
+                <div class="links">
+                    <a href="index.html">
+                        <button>
+                            <img src="icons/home.svg" alt="Home" />
+                            <div class="tooltip">Home</div>
+                        </button>
+                    </a>
+                    <a href="index.html">
+                        <button>
+                            <img src="icons/profile.svg" alt="About Me" />
+                            <div class="tooltip">Profile</div>
+                        </button>
+                    </a>
+                    <a href="projects.html">
+                        <button>
+                            <img src="icons/code.svg" alt="Projects" />
+                            <div class="tooltip">Projects</div>
+                        </button>
+                    </a>
+                </div>
+            </nav>
+            <div class="right-section">
+                <a href="hire.html" class="hire-me">
+                    <img
+                        src="icons/plus-circle-svgrepo-com.svg"
+                        alt="Hire Me"
+                    />
+                    <p>Hire Me</p>
+                </a>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <div class="section-title">
+                <div class="circle"></div>
+                <h4>Projects</h4>
+            </div>
+            <div class="subtitle">
+                <p>Check out some of my projects!</p>
+            </div>
+            <section class="cards">
+                <div
+                    class="project-card"
+                    data-title="My Personal Linktree"
+                    data-company="Rocketseat"
+                    data-year="2024"
+                    data-tools="HTML, CSS & JAVASCRIPT"
+                    data-img-src="icons/linktree-svgrepo-com.svg"
+                    data-modal-bg-id="linktree"
+                    data-description="Um agregador de links pessoal e responsivo para centralizar minhas redes sociais e projetos. O projeto inclui um switch para alternar entre temas claro e escuro."
+                    data-showcase-img1="imagens/darkmode.png"
+                    data-showcase-img2="imagens/lightmode.png"
+                    data-github-link="https://github.com/guilherme-augusto0611/My-Linktree.git"
+                >
+                    <div class="project-image" id="linktree">
+                        <img
+                            src="icons/linktree-svgrepo-com.svg"
+                            alt="Linktree"
+                        />
+                    </div>
+                    <div class="project-description">
+                        <h4>My Linktree</h4>
+                        <p>A linktree with all my socials.</p>
+                    </div>
+                    <div class="next">
+                        <img src="icons/next.svg" alt="See details" />
+                    </div>
+                </div>
+
+                <div
+                    class="project-card"
+                    data-title="YouTube Clone"
+                    data-company="Personal Project"
+                    data-year="2024"
+                    data-tools="HTML & CSS"
+                    data-img-src="icons/youtube-2.svg"
+                    data-modal-bg-id="youtube"
+                    data-description="Um clone da interface do YouTube, focado em recriar o layout da página inicial de forma responsiva utilizando HTML semântico e CSS com Flexbox e Grid Layout."
+                    data-showcase-img1="imagens/yt-clone01.png"
+                    data-showcase-img2="imagens/yt-clone02.png"
+                    data-github-link="https://github.com/guilherme-augusto0611/YouTube-Project.git"
+                >
+                    <div class="project-image" id="youtube">
+                        <img src="icons/youtube-2.svg" alt="Youtube" />
+                    </div>
+                    <div class="project-description">
+                        <h4>Youtube Clone</h4>
+                        <p>A full responsive YouTube clone.</p>
+                    </div>
+                    <div class="next">
+                        <img src="icons/next.svg" alt="See details" />
+                    </div>
+                </div>
+
+                <div
+                    class="project-card"
+                    data-title="E-commerce API"
+                    data-company="Personal Project"
+                    data-year="2025"
+                    data-tools="Python, Flask, Postman, SQL"
+                    data-img-src="icons/api-interface-svgrepo-com.svg"
+                    data-modal-bg-id="api"
+                    data-description="Uma API RESTful para um e-commerce fictício, permitindo operações CRUD (Create, Read, Update, Delete) para produtos, usuários e pedidos.
+                    Este projeto foi focado para treinar minhas habilidades com Python, Flask e SQL."
+                    data-github-link="https://github.com/guilherme-augusto0611/E-commerce-API.git"
+                >
+                    <div class="project-image" id="api">
+                        <img
+                            src="icons/api-interface-svgrepo-com.svg"
+                            alt="API"
+                        />
+                    </div>
+                    <div class="project-description">
+                        <h4>E-commerce API</h4>
+                        <p>An API for a fictional e-commerce.</p>
+                    </div>
+                    <div class="next">
+                        <img src="icons/next.svg" alt="See details" />
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div id="project-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-btn">&times;</span>
+
+                        <div class="modal-first">
+                            <div id="modal-logo-container" class="modal-logo">
+                                <img
+                                    id="modal-image"
+                                    src=""
+                                    alt="Logo do Projeto"
+                                />
+                            </div>
+                            <h3 id="modal-title">Título do Projeto</h3>
+                        </div>
+
+                        <table class="modal-details-table">
+                            <tbody>
+                                <tr>
+                                    <td><strong>Projeto:</strong></td>
+                                    <td id="modal-project-name"></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Empresa:</strong></td>
+                                    <td id="modal-company"></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Ano:</strong></td>
+                                    <td id="modal-year"></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Ferramentas:</strong></td>
+                                    <td id="modal-tools"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="modal-description-content">
+                            <p id="modal-description"></p>
+                            <div id="modal-showcase-images"></div>
+                        </div>
+
+                        <a
+                            id="modal-link"
+                            href="#"
+                            target="_blank"
+                            class="github-button"
+                            >Ver no GitHub</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer-->
+            <section class="footer-section">
+                <div class="section-title">
+                    <div class="circle"></div>
+                    <h4>Let's Connect</h4>
+                </div>
+
+                <div class="social-media">
+                    <div class="social-circle">
+                        <a
+                            href="https://www.linkedin.com/in/guilherme-augusto-devv"
+                        >
+                            <img src="icons/linkedin.svg" alt="LinkedIn" />
+                        </a>
+                    </div>
+                    <div class="social-circle">
+                        <a href="https://github.com/guilherme-augusto0611">
+                            <img src="icons/github.svg" alt="GitHub" />
+                        </a>
+                    </div>
+                    <div class="social-circle">
+                        <a href="https://www.instagram.com/guilherme.aab/">
+                            <img src="icons/instagram.svg" alt="Instagram" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hire Me</title>
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/general.css" />
+        <link rel="stylesheet" href="styles/hire.css" />
+
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <!-- Header de Navegação -->
+        <header class="nav-header">
+            <nav class="left-section">
+                <div class="links">
+                    <a href="index.html">
+                        <button>
+                            <img src="icons/home.svg" alt="Home" />
+                            <div class="tooltip">Home</div>
+                        </button>
+                    </a>
+                    <a href="index.html">
+                        <button>
+                            <img src="icons/profile.svg" alt="About Me" />
+                            <div class="tooltip">Profile</div>
+                        </button>
+                    </a>
+                    <a href="projects.html">
+                        <button>
+                            <img src="icons/code.svg" alt="Projects" />
+                            <div class="tooltip">Projects</div>
+                        </button>
+                    </a>
+                </div>
+            </nav>
+            <div class="right-section">
+                <a href="hire.html" class="hire-me">
+                    <img
+                        src="icons/plus-circle-svgrepo-com.svg"
+                        alt="Hire Me"
+                    />
+                    <p>Hire Me</p>
+                </a>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <section class="section-title">
+                <div class="title">
+                    <div class="circle"></div>
+                    <h4>Hire Me</h4>
+                </div>
+                <div class="avaliable">
+                    <div class="circle"></div>
+                    <div class="text-mobile-hidden">
+                        <p>AVALIABLE FOR WORK</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form">
+                <div class="form-container-title">
+                    <div class="form-title">
+                        <h1>Get in Touch</h1>
+                        <p>I'm currently open for work, contact me!</p>
+                    </div>
+                </div>
+                <form
+                    class="form-container"
+                    action="https://formspree.io/f/xdkddrjr"
+                    method="POST"
+                >
+                    <div class="form-group">
+                        <input
+                            required
+                            type="text"
+                            autocomplete="off"
+                            name="name"
+                            placeholder="Name"
+                        />
+                        <input
+                            required
+                            type="email"
+                            autocomplete="off"
+                            name="name"
+                            placeholder="Email"
+                        />
+                    </div>
+                    <textarea
+                        required
+                        rows="10"
+                        name="message"
+                        autocomplete="off"
+                        placeholder="Message"
+                    ></textarea>
+                    <button>Submit</button>
+                </form>
+            </section>
+            <!-- Rodapé -->
+            <section class="footer-section">
+                <div class="footer-title">
+                    <div class="circle"></div>
+                    <h4>Let's Connect</h4>
+                </div>
+
+                <div class="social-media">
+                    <div class="social-circle">
+                        <a
+                            href="https://www.linkedin.com/in/guilherme-augusto-devv"
+                        >
+                            <img src="icons/linkedin.svg" alt="LinkedIn" />
+                        </a>
+                    </div>
+                    <div class="social-circle">
+                        <a href="https://github.com/guilherme-augusto0611">
+                            <img src="icons/github.svg" alt="GitHub" />
+                        </a>
+                    </div>
+                    <div class="social-circle">
+                        <a href="https://www.instagram.com/guilherme.aab/">
+                            <img src="icons/instagram.svg" alt="Instagram" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
