@@ -67,7 +67,7 @@ Caso queira entrar em contato comigo:
 
 * 📧 Email: guilhermeaborges967@gmail.com
 * 💼 LinkedIn: https://linkedin.com/in/guilherme-augusto-devv
-
+* 🌐 Portfolio: https://my-portfolio-gules-ten-59.vercel.app/
 ---
 
 ## 📄 Licença
