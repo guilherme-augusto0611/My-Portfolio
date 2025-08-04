@@ -40,7 +40,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/guilherme-augusto0611/My-Portfolio.git
 
 ```
 
